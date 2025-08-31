@@ -1,0 +1,209 @@
+====================================
+📘 BASIC HTML ELEMENTS CHEAT SHEET
+====================================
+
+1. <!DOCTYPE html>
+   - Declares the document type and version of HTML.
+   - Always goes at the very top of an HTML document.
+
+2. <html>
+   - The root element of an HTML page. All content goes inside it.
+   - Example:
+     <html> ... </html>
+
+3. <head>
+   - Contains meta-information (not visible on the page).
+   - Example:
+     <head>
+         <title>My Page</title>
+         <meta charset="UTF-8">
+     </head>
+
+4. <title>
+   - Sets the title of the webpage (shown in the browser tab).
+   - Example:
+     <title>Welcome Page</title>
+
+5. <body>
+   - Contains all the visible content on the web page.
+   - Example:
+     <body>
+         <h1>Hello World</h1>
+     </body>
+
+==========================
+📄 TEXT STRUCTURE & HEADINGS
+==========================
+
+6. <h1> to <h6>
+   - Headings, where <h1> is largest, <h6> is smallest.
+   - Example:
+     <h1>Main Title</h1>
+     <h2>Subheading</h2>
+
+7. <p>
+   - Paragraph text.
+   - Example:
+     <p>This is a paragraph.</p>
+
+8. <br>
+   - Line break (no closing tag).
+   - Example:
+     Line 1<br>Line 2
+
+9. <hr>
+   - Horizontal line divider (no closing tag).
+   - Example:
+     <hr>
+
+===================
+🖋️ TEXT FORMATTING
+===================
+
+10. <strong>
+    - Bold text, also emphasizes importance.
+    - Example:
+      <strong>Important</strong>
+
+11. <em>
+    - Italic text, usually for emphasis.
+    - Example:
+      <em>This is emphasized</em>
+
+12. <b> and <i>
+    - Bold (<b>) and italic (<i>) without semantic meaning.
+    - Example:
+      <b>Bold</b> and <i>Italic</i>
+
+13. <span>
+    - Inline container for styling parts of text.
+    - Example:
+      <span style="color:red;">Red Text</span>
+
+=======================
+🔗 LINKS & MEDIA
+=======================
+
+14. <a href="URL">
+    - Anchor (link to another page).
+    - Example:
+      <a href="https://example.com">Visit</a>
+
+15. <img src="URL" alt="description">
+    - Image tag (self-closing).
+    - Example:
+      <img src="image.jpg" alt="My Image">
+
+16. <video>, <audio>
+    - Embed video or audio.
+    - Example:
+      <video controls><source src="video.mp4" type="video/mp4"></video>
+
+==================
+📋 LISTS
+==================
+
+17. <ul>, <ol>, <li>
+    - Unordered list (ul), ordered list (ol), list items (li).
+    - Example:
+      <ul>
+         <li>Item 1</li>
+         <li>Item 2</li>
+      </ul>
+
+===================
+📦 LAYOUT ELEMENTS
+===================
+
+18. <div>
+    - Block-level container for grouping content.
+    - Example:
+      <div class="box">Content</div>
+
+19. <section>, <article>, <header>, <footer>, <nav>, <aside>
+    - Semantic elements for page structure.
+    - Example:
+      <section>
+         <h2>News</h2>
+         <p>Latest update...</p>
+      </section>
+
+===================
+📝 FORMS
+===================
+
+20. <form>
+    - Form container for user input.
+    - Example:
+      <form action="/submit" method="post">
+         <input type="text" name="username">
+         <button type="submit">Send</button>
+      </form>
+
+21. <input>
+    - Input field (text, email, password, etc.).
+    - Example:
+      <input type="email" name="email">
+
+22. <label>
+    - Label for input.
+    - Example:
+      <label for="name">Name:</label>
+      <input id="name" type="text">
+
+23. <textarea>
+    - Multi-line text box.
+    - Example:
+      <textarea rows="4" cols="50"></textarea>
+
+24. <select> and <option>
+    - Dropdown list.
+    - Example:
+      <select>
+         <option value="1">One</option>
+         <option value="2">Two</option>
+      </select>
+
+======================
+🛠️ MISC
+======================
+
+25. <script>
+    - Embeds JavaScript.
+    - Example:
+      <script>
+         alert("Hello!");
+      </script>
+
+26. <style>
+    - Embeds CSS styles.
+    - Example:
+      <style>
+         body { background-color: lightblue; }
+      </style>
+
+27. <link>
+    - Links to external files like CSS.
+    - Example:
+      <link rel="stylesheet" href="style.css">
+
+28. <meta>
+    - Metadata such as encoding, viewport settings, etc.
+    - Example:
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+====================
+✅ BASIC TEMPLATE
+====================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a basic HTML page.</p>
+</body>
+</html>
