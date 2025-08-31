@@ -50,3 +50,27 @@ body {
   padding: 20px;
   overflow-y: auto;
 }
+
+/* Dark mode support */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .sidebar {
+  background: #1c1c1c;
+}
+
+body.dark .sidebar a {
+  color: #aaa;
+}
+
+body.dark .sidebar a.active,
+body.dark .sidebar a:hover {
+  background: #333;
+  color: #fff;
+}
+
+body.dark .box {
+  border-color: #444;
+}
