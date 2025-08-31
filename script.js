@@ -64,7 +64,16 @@ function enableFormValidation() {
 function afterLoad() {
   makeCollapsible();
   enableFormValidation();
+
+  // Script Example: button alert
+  const alertBtn = document.getElementById("alert-button");
+  if (alertBtn) {
+    alertBtn.addEventListener("click", () => {
+      alert("Hello from JavaScript!");
+    });
+  }
 }
+
 
 // Modify loadPage() so afterLoad runs
 function loadPage(url, linkElement) {
