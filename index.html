@@ -1,146 +1,34 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Elements Example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        section { margin-bottom: 40px; }
-        hr { margin-top: 30px; }
-        .box { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>HTML Elements Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
 
-    <h1>HTML Elements Demonstration</h1>
-    <p>This page demonstrates the most commonly used HTML tags with live examples.</p>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="sections/intro.html" data-link class="active">Intro</a></li>
+        <li><a href="sections/text.html" data-link>Text Structure</a></li>
+        <li><a href="sections/formatting.html" data-link>Text Formatting</a></li>
+        <li><a href="sections/media.html" data-link>Links & Media</a></li>
+        <li><a href="sections/lists.html" data-link>Lists</a></li>
+        <li><a href="sections/layout.html" data-link>Layout Elements</a></li>
+        <li><a href="sections/forms.html" data-link>Forms</a></li>
+        <li><a href="sections/script-example.html" data-link>Script Example</a></li>
+      </ul>
+    </nav>
 
-    <hr>
+    <!-- Content area -->
+    <main class="content" id="content">
+      <h1>Loading...</h1>
+    </main>
+  </div>
 
-    <section>
-        <h2>Text Structure & Headings</h2>
-        <h1>This is an H1 Heading</h1>
-        <h2>This is an H2 Heading</h2>
-        <h3>This is an H3 Heading</h3>
-        <p>This is a paragraph element.</p>
-        Line one<br>Line two (after a line break)<br>
-        <hr>
-    </section>
-
-    <section>
-        <h2>Text Formatting</h2>
-        <p><strong>This is strong (bold with semantic meaning)</strong></p>
-        <p><em>This is emphasized (italic with semantic meaning)</em></p>
-        <p><b>This is just bold</b></p>
-        <p><i>This is just italic</i></p>
-        <p><span style="color: red;">This text is red using a span</span></p>
-        <hr>
-    </section>
-
-    <section>
-        <h2>Links and Media</h2>
-        <p>Visit <a href="https://example.com" target="_blank">Example.com</a></p>
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-        <br><br>
-        <video width="320" controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br><br>
-        <audio controls>
-            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-        <hr>
-    </section>
-
-    <section>
-        <h2>Lists</h2>
-        <p>Unordered List:</p>
-        <ul>
-            <li>Apples</li>
-            <li>Bananas</li>
-            <li>Cherries</li>
-        </ul>
-        <p>Ordered List:</p>
-        <ol>
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
-        </ol>
-        <hr>
-    </section>
-
-    <section>
-        <h2>Layout Elements</h2>
-        <div class="box">This is a div box used to group elements.</div>
-        <section class="box">
-            <h3>Section</h3>
-            <p>This is a semantic section element.</p>
-        </section>
-        <article class="box">
-            <h3>Article</h3>
-            <p>This is a self-contained article.</p>
-        </article>
-        <aside class="box">
-            <h3>Aside</h3>
-            <p>This is side content related to the main article.</p>
-        </aside>
-        <nav class="box">
-            <h3>Navigation</h3>
-            <a href="#top">Home</a> |
-            <a href="#footer">Footer</a>
-        </nav>
-        <header class="box">
-            <h3>Header</h3>
-            <p>This is a page header.</p>
-        </header>
-        <footer class="box" id="footer">
-            <h3>Footer</h3>
-            <p>This is the footer section.</p>
-        </footer>
-        <hr>
-    </section>
-
-    <section>
-        <h2>Forms</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <br><br>
-
-            <label for="bio">Bio:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="40"></textarea>
-            <br><br>
-
-            <label for="choice">Choose one:</label>
-            <select id="choice" name="choice">
-                <option value="one">Option One</option>
-                <option value="two">Option Two</option>
-            </select>
-            <br><br>
-
-            <button type="submit">Submit</button>
-        </form>
-        <hr>
-    </section>
-
-    <section>
-        <h2>Script Example</h2>
-        <button onclick="showAlert()">Click Me</button>
-        <script>
-            function showAlert() {
-                alert("Hello from JavaScript!");
-            }
-        </script>
-    </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
-
