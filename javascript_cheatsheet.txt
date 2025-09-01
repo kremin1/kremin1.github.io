@@ -1,0 +1,166 @@
+JavaScript Cheatsheet - Most Used Syntax & Usage
+=================================================
+
+1. VARIABLES
+------------
+let x = 10;       // Block-scoped, can be reassigned
+const y = 20;     // Block-scoped, cannot be reassigned
+var z = 30;       // Function-scoped (older, avoid if possible)
+
+2. DATA TYPES
+-------------
+String: "Hello", 'World'
+Number: 42, 3.14
+Boolean: true, false
+Array: [1, 2, 3]
+Object: {name: "Alice", age: 25}
+Null: null
+Undefined: undefined
+
+3. OPERATORS
+------------
++   // addition / string concatenation
+-   // subtraction
+*   // multiplication
+/   // division
+%   // modulus (remainder)
+**  // exponentiation
+==  // equality (type-converts)
+=== // strict equality (no type conversion)
+!=  // not equal
+!== // strict not equal
+&&  // logical AND
+||  // logical OR
+!   // logical NOT
+
+4. CONDITIONALS
+---------------
+if (x > 10) {
+  console.log("Greater than 10");
+} else if (x === 10) {
+  console.log("Equal to 10");
+} else {
+  console.log("Less than 10");
+}
+
+switch (day) {
+  case "Monday":
+    console.log("Start of week");
+    break;
+  case "Friday":
+    console.log("End of week");
+    break;
+  default:
+    console.log("Midweek");
+}
+
+5. LOOPS
+--------
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+
+for (let item of [1,2,3]) {
+  console.log(item); // values of array
+}
+
+for (let key in obj) {
+  console.log(key, obj[key]); // keys and values of object
+}
+
+6. FUNCTIONS
+------------
+function greet(name) {
+  return "Hello " + name;
+}
+
+const greet = (name) => {
+  return `Hello ${name}`;
+};
+
+7. EVENTS
+---------
+document.getElementById("btn").addEventListener("click", () => {
+  alert("Button clicked!");
+});
+
+8. ARRAYS
+---------
+let arr = [1, 2, 3];
+arr.push(4);       // [1,2,3,4]
+arr.pop();         // [1,2,3]
+arr.shift();       // remove first element
+arr.unshift(0);    // add to start
+arr.forEach(x => console.log(x));
+let doubled = arr.map(x => x*2);
+let evens = arr.filter(x => x%2 === 0);
+
+9. OBJECTS
+----------
+let person = {name: "Alice", age: 25};
+console.log(person.name);
+person.job = "Engineer";  // add new property
+delete person.age;        // remove property
+
+10. DOM MANIPULATION
+--------------------
+document.getElementById("demo").innerText = "Hello";
+document.querySelector(".class").style.color = "red";
+document.createElement("div"); // create new element
+
+11. CLASSES
+-----------
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(this.name + " makes a noise.");
+  }
+}
+let dog = new Animal("Rover");
+dog.speak();
+
+12. PROMISES & ASYNC
+--------------------
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+async function getData() {
+  try {
+    let response = await fetch("https://api.example.com/data");
+    let data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+13. JSON
+--------
+let obj = {name: "Alice", age: 25};
+let jsonStr = JSON.stringify(obj); // object -> JSON string
+let newObj = JSON.parse(jsonStr);  // JSON string -> object
+
+14. TIMERS
+----------
+setTimeout(() => {
+  console.log("Runs once after 1s");
+}, 1000);
+
+setInterval(() => {
+  console.log("Runs every 1s");
+}, 1000);

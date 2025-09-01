@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Cheatsheet</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    h1, h2 { color: #333; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 6px; overflow-x: auto; }
+    code { font-family: Consolas, monospace; }
+    section { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Cheatsheet</h1>
+  <p>Most common JavaScript syntax with examples.</p>
+
+  <section>
+    <h2>Variables</h2>
+    <pre><code>// Declare variables
+var x = 10;      // function-scoped
+let y = 20;      // block-scoped
+const z = 30;    // constant, block-scoped
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Data Types</h2>
+    <pre><code>let str = "Hello";  // string
+let num = 42;       // number
+let bool = true;    // boolean
+let arr = [1, 2, 3]; // array
+let obj = { name: "Alice", age: 25 }; // object
+let und;            // undefined
+let n = null;       // null
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Operators</h2>
+    <pre><code>// Arithmetic
+let sum = 5 + 3;    // 8
+let diff = 5 - 3;   // 2
+let prod = 5 * 3;   // 15
+let quot = 5 / 3;   // 1.666...
+
+// Comparison
+5 === 5;  // true
+5 !== 6;  // true
+5 > 3;    // true
+
+// Logical
+true && false;  // false
+true || false;  // true
+!true;          // false
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Conditionals</h2>
+    <pre><code>let age = 18;
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+
+let result = age >= 18 ? "Adult" : "Minor";
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Loops</h2>
+    <pre><code>for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let nums = [1, 2, 3];
+for (let n of nums) {
+  console.log(n);
+}
+
+let obj = { a: 1, b: 2 };
+for (let key in obj) {
+  console.log(key, obj[key]);
+}
+
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Functions</h2>
+    <pre><code>// Function declaration
+function greet(name) {
+  return "Hello " + name;
+}
+
+// Function expression
+const greet2 = function(name) {
+  return "Hi " + name;
+};
+
+// Arrow function
+const greet3 = (name) => "Hey " + name;
+
+console.log(greet("Alice"));
+</code></pre>
+  </section>
+
+  <section>
+    <h2>DOM Manipulation</h2>
+    <pre><code>document.getElementById("myId").textContent = "Changed!";
+document.querySelector(".myClass").style.color = "red";
+
+let newDiv = document.createElement("div");
+newDiv.textContent = "Hello";
+document.body.appendChild(newDiv);
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Events</h2>
+    <pre><code>document.getElementById("btn").addEventListener("click", () => {
+  alert("Button clicked!");
+});
+</code></pre>
+  </section>
+
+  <section>
+    <h2>Objects & Arrays</h2>
+    <pre><code>let person = { name: "Bob", age: 30 };
+console.log(person.name);
+
+let nums = [10, 20, 30];
+nums.push(40);   // [10,20,30,40]
+nums.forEach(n => console.log(n));
+</code></pre>
+  </section>
+
+  <section>
+    <h2>JSON</h2>
+    <pre><code>let obj = { name: "Alice", age: 25 };
+let json = JSON.stringify(obj); // object -> string
+let parsed = JSON.parse(json);  // string -> object
+</code></pre>
+  </section>
+
+  <section>
+    <h2>ES6 Features</h2>
+    <pre><code>// Template literals
+let name = "Sam";
+console.log(`Hello ${name}`);
+
+// Destructuring
+let [a, b] = [1, 2];
+let {x, y} = {x: 5, y: 10};
+
+// Spread/rest operator
+let arr1 = [1,2,3];
+let arr2 = [...arr1, 4,5];
+
+function sum(...nums) {
+  return nums.reduce((a,b) => a+b);
+}
+</code></pre>
+  </section>
+
+</body>
+</html>
