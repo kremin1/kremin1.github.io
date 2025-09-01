@@ -1,0 +1,109 @@
+
+# CSS Cheatsheet
+
+## Basic Selectors
+- `element {}` → Targets an HTML element
+```css
+p { color: blue; }
+```
+
+- `.class {}` → Targets elements with a class
+```css
+.button { background: red; }
+```
+
+- `#id {}` → Targets an element with an ID
+```css
+#header { font-size: 20px; }
+```
+
+## Colors
+- Named colors, HEX, RGB, HSL
+```css
+h1 { color: red; }
+h2 { color: #00ff00; }
+h3 { color: rgb(0,0,255); }
+```
+
+## Text
+```css
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+```
+
+## Box Model
+```css
+div {
+  margin: 10px;   /* space outside */
+  padding: 20px;  /* space inside */
+  border: 1px solid black;
+}
+```
+
+## Backgrounds
+```css
+body {
+  background-color: lightgray;
+  background-image: url("bg.png");
+  background-size: cover;
+}
+```
+
+## Positioning
+```css
+.box {
+  position: relative; /* or absolute, fixed, sticky */
+  top: 10px;
+  left: 20px;
+}
+```
+
+## Flexbox
+```css
+.container {
+  display: flex;
+  justify-content: center; /* align horizontally */
+  align-items: center;     /* align vertically */
+}
+```
+
+## Grid
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+```
+
+## Transitions & Animations
+```css
+button {
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: blue;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+div {
+  animation: fadeIn 2s ease-in;
+}
+```
+
+## Responsive Design (Media Queries)
+```css
+@media (max-width: 600px) {
+  body {
+    background: yellow;
+  }
+}
+```
