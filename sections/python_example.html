@@ -1,10 +1,18 @@
-<head>
-    <title>Python Backend Example</title>
-    <script src="/script.js" defer></script>
-</head>
-<body>
-    <h1>Call Python from JavaScript</h1>
-    <input id="num" type="number" placeholder="Enter a number">
-    <button onclick="sendNumber()">Square it!</button>
-    <p id="result"></p>
-</body>
+<input id="num" type="number">
+<button onclick="sendNumber()">Square</button>
+<p id="result"></p>
+
+<script>
+function sendNumber() {
+    const n = document.getElementById("num").value;
+    fetch("http://127.0.0.1:5000/api/square", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ number: Number(n) })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("result").innerText = "Result: " + data.result;
+    });
+}
+</script>
