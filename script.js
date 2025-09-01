@@ -97,3 +97,20 @@ function loadPage(url, linkElement) {
       console.error(err);
     });
 }
+
+
+
+//python example
+function sendNumber() {
+    const num = document.getElementById("num").value;
+
+    fetch("/api/square", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ number: Number(num) })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("result").innerText = "Result: " + data.result;
+    });
+}
