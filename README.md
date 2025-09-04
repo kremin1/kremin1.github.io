@@ -1,55 +1,55 @@
-# My Portfolio
+# Portfolio Website
 
-Welcome to my portfolio! This project showcases various code snippets and complete projects that I have worked on in different programming languages. Below you will find sections dedicated to code snippets and projects, along with their functionalities.
+This is a portfolio website built with React. It showcases various projects and provides information about the developer.
 
-## Table of Contents
+## Project Structure
 
-- [Code Snippets](#code-snippets)
-- [Projects](#projects)
-- [Getting Started](#getting-started)
-- [License](#license)
-
-## Code Snippets
-
-This section contains code snippets demonstrating specific functionalities in various programming languages. Each snippet is organized by language.
-
-- **JavaScript**
-  - [Example Snippet](src/snippets/javascript/exampleSnippet.js): A JavaScript code snippet demonstrating a specific functionality.
-
-- **Python**
-  - [Example Snippet](src/snippets/python/exampleSnippet.py): A Python code snippet demonstrating a specific functionality.
-
-- **TypeScript**
-  - [Example Snippet](src/snippets/typescript/exampleSnippet.ts): A TypeScript code snippet demonstrating a specific functionality.
-
-## Projects
-
-This section showcases complete projects that I have developed. Each project includes a README file with an overview, setup instructions, and usage examples.
-
-- **Project 1**
-  - [Overview](src/projects/project1/README.md): Documentation for Project 1.
-  - [Main Code](src/projects/project1/main.py): The main Python code for Project 1.
-
-- **Project 2**
-  - [Overview](src/projects/project2/README.md): Documentation for Project 2.
-  - [Main Code](src/projects/project2/app.js): The main JavaScript code for Project 2.
-
-## Getting Started
-
-To get started with this portfolio, clone the repository and install the necessary dependencies:
-
-```bash
-git clone <repository-url>
-cd my-portfolio
-npm install
+```
+portfolio-website
+├── index.html          # Main HTML document
+├── src
+│   ├── App.jsx        # Main React component
+│   ├── components
+│   │   └── Header.jsx # Navigation bar component
+│   ├── pages
+│   │   └── Home.jsx   # Landing page component
+│   ├── styles
+│   │   └── main.css   # CSS styles for the website
+│   └── assets
+│       └── fonts/     # Custom font files
+├── package.json        # npm configuration file
+└── README.md           # Project documentation
 ```
 
-Then, you can run the application:
+## Setup Instructions
 
-```bash
-npm start
-```
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
 
-## License
+2. Navigate to the project directory:
+   ```
+   cd portfolio-website
+   ```
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm start
+   ```
+
+## Features
+
+- Responsive design
+- Custom fonts
+- Navigation bar
+- Home page with project showcases
+
+## Usage
+
+Open your browser and go to `http://localhost:3000` to view the portfolio website.
