@@ -1,0 +1,1 @@
+// This file contains the main JavaScript code for project2. You can replace this comment with your own project code.
